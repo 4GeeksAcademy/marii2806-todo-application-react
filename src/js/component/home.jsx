@@ -54,8 +54,8 @@ const Home = () => {
 
     return (
         <div className="container">
-            <h1>TODOS</h1>
-            <ul>
+            <h1>todos</h1>
+            <ul className = "container-fluid list-group list-group flush">
                 <li>
                     <input
                         type="text"
@@ -76,7 +76,7 @@ const Home = () => {
                     </li>
                 ))}
             </ul>
-            <div>{todos.length} tasks left</div>
+            <div className = "footer">{todos.length} tasks left</div>
         </div>
     );
 };
